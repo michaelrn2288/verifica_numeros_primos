@@ -5,16 +5,16 @@ const isPrime = (number) => {
     }
 }
 
-export const firstXPrimeNumbers = (x) => {
+export const firstXPrimeNumbers = (primeAmount) => {
     const primeNumbers = []
-    let counter = 0
-    let number = 0
-    while (counter < x) {
-        number++
-        if (isPrime(number)) {
-            primeNumbers[counter] = number
-            counter++
+    let checkedNumber = 2
+
+    while (primeNumbers.length < primeAmount) {
+        if (isPrime(checkedNumber)) {
+            primeNumbers[primeNumbers.length] = checkedNumber
         }
+        checkedNumber++
     }
+
     return primeNumbers
 }
