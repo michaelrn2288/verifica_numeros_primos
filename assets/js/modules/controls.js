@@ -1,4 +1,4 @@
-import { isPrime, firstXPrimeNumbers } from './primeCalc.js'
+import { firstXPrimeNumbers } from './primeCalc.js'
 import { renderResult } from "./renderResult.js"
 
 export const controls = () => {
