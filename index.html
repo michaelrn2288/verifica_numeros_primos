@@ -5,23 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Modelo</title>
+  <title>Buscador de números primos</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
-  <section class="container">
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Repellendus nisi explicabo saepe voluptatibus consequuntur et corporis
-      maxime quos, doloribus vitae voluptatum quisquam necessitatibus
-      pariatur veritatis exercitationem beatae officiis suscipit Ea!
-    </p>
-  </section>
+  <main>
+    <h1>Buscador de números primos</h1>
+    <p>Com esta ferramenta, você pode procurar os primeiros números primos.</p>
+    <form>
+      Procurar os <input type="number" id="input"> primeiros números primos:
+      <button type="button">Mostrar números</button>
+    </form>
 
-  <script src="./assets/js/main.js"></script>
+    <div id="result"></div>
+  </main>
+
+  <script type="module" src="./assets/js/main.js"></script>
 </body>
 
 </html>
